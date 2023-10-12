@@ -1,0 +1,6 @@
+uno dos tres cuatro
+cinco seis siete ocho
+nueve diez once doce
+trece 14 15 16
+17 18 19 20
+True False 3.14 2.71
