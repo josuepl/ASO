@@ -15,16 +15,20 @@ print(valor1," ",valor2)
 '''
 class Dato:
     def __init__(self, val1, val2, val3, val4) -> None:
-        self.val1 = val1
-        self.val2 = val2
-        self.val3 = val3
-        self.val4 = val4
+        self.val1 = int(val1)
+        self.val2 = int(val2)
+        self.val3 = int(val3)
+        self.val4 = int(val4)
         pass
     def __str__(self) -> str:
         cad = "val1:"+str(self.val1)+"\t|val2:"+str(self.val2)+"\t|val3:"+str(self.val3)+"\t|val4:"+str(self.val4)
         return cad
-        pass
+    
+    def __gt__(self, dato):
+        return self.val2 > dato.val2
+    
     pass
+
 listaDatos = []
 palabras = []
 archivo = open("datos.txt")
@@ -38,4 +42,8 @@ for line in archivo.readlines():
     pass
 
 for elem in listaDatos:
+    print(elem)
+
+newL = sorted(listaDatos)
+for elem in newL:
     print(elem)
