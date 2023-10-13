@@ -40,10 +40,31 @@ for line in archivo.readlines():
     listaDatos.append(obj)
     palabras.clear()
     pass
-
+print("PID\t|TLL\t|TEXE\t|PRIO\t|")
 for elem in listaDatos:
     print(elem)
 
 newL = sorted(listaDatos)
+print("================================================================")
+print("PID\t|TLL\t|TEXE\t|PRIO\t|")
 for elem in newL:
+    print(elem)
+listEsp=[]
+listExe=[]
+temp= newL.pop(0)
+print("PID:", temp.val1)
+listExe.append(temp)
+temp= newL.pop(0)
+print("PID:",temp.val1)
+listExe.append(temp)
+temp= newL.pop(0)
+print("PID:",temp.val1)
+listExe.append(temp)
+print("================================================================")
+print("PID\t|TLL\t|TEXE\t|PRIO\t|")
+for elem in newL:
+    print(elem)
+print("================================================================")
+print("PID\t|TLL\t|TEXE\t|PRIO\t|")
+for elem in listExe:
     print(elem)
